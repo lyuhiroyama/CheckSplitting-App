@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    let bbb = ["Lavar", "Lonzo", "LiAngelo", "LaMelo"]
+    @State private var selected = "Lavar"
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Form {
+            Picker("Select your Big Baller: ", selection: $selected) {
+                ForEach( bbb, id: \.self) {
+                    Text($0)
+                }
+            }
         }
-        .padding()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
