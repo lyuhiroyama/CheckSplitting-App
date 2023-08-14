@@ -1,3 +1,3 @@
 # Project1_WeSplit
 
-HWS Project 1
+A check-splitting app.
