@@ -62,7 +62,7 @@ struct ContentView: View {
                 
                 Section {
                     Text(checkGrandTotal, format: localCurrency)
-                        .foregroundColor(tipPercentage == 0 ? .red : .primary)
+                        .foregroundColor(tipPercentage == 0 ? .red : .primary) //Conditional Modifier
                 } header: {
                     Text("Grand Total (Tip Included)")
                 }
